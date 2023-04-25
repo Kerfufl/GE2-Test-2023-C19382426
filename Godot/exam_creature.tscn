@@ -77,7 +77,6 @@ shape = SubResource( 9 )
 [node name="Avoidance" type="Node" parent="creature/boid"]
 script = ExtResource( 3 )
 weight = 10.0
-enabled = false
 feeler_length = 15
 
 [node name="Harmonic" type="Node" parent="creature/boid"]
@@ -209,4 +208,3 @@ radius = 30
 script = ExtResource( 7 )
 
 [connection signal="body_entered" from="creature/tail/Dodecahedron/Area" to="Collision-Check" method="_on_Area_body_entered"]
-[connection signal="body_exited" from="creature/tail/Dodecahedron/Area" to="Collision-Check" method="_on_Area_body_exited"]

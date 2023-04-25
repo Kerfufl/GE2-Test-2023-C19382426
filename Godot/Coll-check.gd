@@ -46,6 +46,7 @@ func _on_Area_body_entered(body):
 func _input(event):
 	if event is InputEventKey and event.pressed and ! event.echo:
 		if event.scancode == KEY_Z and isChild:
+			
 			#isChild = false
 			pl_pos = pl.global_transform
 			ta.remove_child(pl)
@@ -56,6 +57,7 @@ func _input(event):
 			pl.global_transform = pl_pos
 			bo.get_child(6).enabled=true
 			bo.get_child(7).enabled= false
+			yield()
 			
 #	print("Collision with ", body)
 

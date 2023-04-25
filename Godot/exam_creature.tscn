@@ -208,4 +208,7 @@ radius = 30
 [node name="Collision-Check" type="Node" parent="."]
 script = ExtResource( 7 )
 
+[node name="Timer" type="Timer" parent="Collision-Check"]
+wait_time = 2.0
+
 [connection signal="body_entered" from="creature/tail/Dodecahedron/Area" to="Collision-Check" method="_on_Area_body_entered"]

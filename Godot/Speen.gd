@@ -1,7 +1,6 @@
 extends Spatial
 
 export var speed = 5
-onready var area = get_node("Area")
 
 # Declare member variables here. Examples:
 # var a = 2

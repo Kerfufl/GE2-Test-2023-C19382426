@@ -104,7 +104,6 @@ distance = 100
 [node name="PathFollow" type="Node" parent="creature/boid"]
 script = ExtResource( 1 )
 weight = 3.0
-enabled = false
 path_path = NodePath("../../../Path")
 waypoint_seek_distance = 5
 
@@ -206,8 +205,8 @@ radius = 30
 
 [node name="SceneSwitcher" parent="." instance=ExtResource( 17 )]
 
-[node name="Node2" type="Node" parent="."]
+[node name="Collision-Check" type="Node" parent="."]
 script = ExtResource( 7 )
 
-[connection signal="body_entered" from="creature/tail/Dodecahedron/Area" to="Node2" method="_on_Area_body_entered"]
-[connection signal="body_exited" from="creature/tail/Dodecahedron/Area" to="Node2" method="_on_Area_body_exited"]
+[connection signal="body_entered" from="creature/tail/Dodecahedron/Area" to="Collision-Check" method="_on_Area_body_entered"]
+[connection signal="body_exited" from="creature/tail/Dodecahedron/Area" to="Collision-Check" method="_on_Area_body_exited"]

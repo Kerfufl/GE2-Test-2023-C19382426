@@ -1,6 +1,8 @@
 extends Spatial
 
 export var speed = 5
+onready var area = get_node("Area")
+
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
@@ -14,5 +16,5 @@ func _ready():
 
 func _process(delta):
 	#slowly rotates on x axis
-	rotate_x(.01)
+	rotate_x(.01*delta)
 #	pass

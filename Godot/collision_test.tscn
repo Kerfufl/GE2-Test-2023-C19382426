@@ -33,6 +33,7 @@ transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 8.63
 [node name="DirectionalLight" type="DirectionalLight" parent="."]
 
 [node name="I AM AREA" type="Area" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0009408, 0.0212387, 0.00845814 )
 
 [node name="CollisionShape" type="CollisionShape" parent="I AM AREA"]
 shape = SubResource( 4 )

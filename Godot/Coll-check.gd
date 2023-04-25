@@ -37,7 +37,7 @@ func _on_Area_body_entered(body):
 		pl.global_transform = do.global_transform
 		
 		pl_rot= pl.global_rotation
-		pl.global_rotation = cr.global_rotation
+		pl.global_rotation = -bo.global_rotation
 		bo.get_child(6).enabled=false
 		bo.get_child(7).enabled= true
 		

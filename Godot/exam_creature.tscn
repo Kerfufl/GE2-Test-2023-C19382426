@@ -103,6 +103,7 @@ distance = 100
 [node name="PathFollow" type="Node" parent="creature/boid"]
 script = ExtResource( 1 )
 weight = 3.0
+enabled = false
 path_path = NodePath("../../../Path")
 waypoint_seek_distance = 5
 
